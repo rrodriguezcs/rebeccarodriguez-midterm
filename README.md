@@ -1,1 +1,0 @@
-# rrodriguez-midterm
