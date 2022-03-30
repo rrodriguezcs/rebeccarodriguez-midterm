@@ -14,7 +14,7 @@ use App\Http\Controllers\CustomerController;
 |
 */
 
-Route::get('/customers', CustomerController::class);
+Route::resource('/customers', CustomerController::class);
 
 Route::get('/', function () {
     return view('welcome');
