@@ -235,7 +235,7 @@ return [
             'icon' => 'far fa-list-alt',
         ],
         [         
-            'text' => 'Customers',
+            'text' => 'This is for Customers',
             'url'  => 'customers',
             'icon' => 'far fa-user-circle',
         ],
