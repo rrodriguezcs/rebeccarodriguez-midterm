@@ -236,7 +236,7 @@ return [
         ],
         [         
             'text' => 'Customers',
-            'url'  => 'customer',
+            'url'  => 'customers',
             'icon' => 'far fa-user-circle',
         ],
          [         
