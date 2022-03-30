@@ -17,7 +17,7 @@ use App\Http\Controllers\NoteshistoryController;
 |
 */
 
-Route::resource('/customers', CustomerController::class);
+Route::resource('/customers', CustomersController::class);
 Route::resource('/equipment', EquipmentController::class);
 Route::resource('/manufacturer', ManufacturerController::class);
 Route::resource('/note', NoteshistoryController::class);
