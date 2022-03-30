@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\CustomersController;
+use App\Http\Controllers\CustomerController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,7 +14,7 @@ use App\Http\Controllers\CustomersController;
 |
 */
 
-Route::resource('/customers', CustomersController::class);
+Route::resource('/customers', CustomerController::class);
 
 Route::get('/', function () {
     return view('welcome');
