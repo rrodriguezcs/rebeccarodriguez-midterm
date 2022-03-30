@@ -27,5 +27,5 @@
     </table>
   </div>
 </div>
-<a href="{{ route('customer.create') }} " class="btn btn-primary" >Create</a>
+<a href="{{ route('customers.create') }} " class="btn btn-primary" >Create</a>
 @stop
