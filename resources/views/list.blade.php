@@ -20,14 +20,14 @@
         <tr>
           <td>{{ $customer->id }}</td>
           <td>{{ $customer->name }}</td>
-          <td><a class="btn btn-default btn-sm" href="{{ route('customer.show',['customer'=>$customer->id]) }}">View</a></td>
+          <td><a class="btn btn-default btn-sm" href="{{ route('customers.show',['customer'=>$customer->id]) }}">View</a></td>
         </tr>
         @endforeach
       </tbody>
     </table>
   </div>
 </div>
-<a href="{{ route('customer.create') }} " class="btn btn-primary" >Create</a>
+<a href="{{ route('customers.create') }} " class="btn btn-primary" >Create</a>
 @stop
 
 @section('js')
