@@ -231,7 +231,7 @@ return [
         ],     
         [
             'text' => 'Invoices',
-            'url'  => 'invoice',
+            'url'  => 'invoices',
             'icon' => 'far fa-list-alt',
         ],
         [         
