@@ -12,7 +12,7 @@ class ManufacturerController extends Controller
     public function index()
     {
         $manufacture = Manufac::all();
-        return view('manufacturer.list',compact('manufacturer'));
+        return view('manufac.list',compact('manufacturer'));
     }
 
     public function create(FormBuilder $formBuilder)
@@ -21,7 +21,7 @@ class ManufacturerController extends Controller
             'method' => 'POST',
             'url' => route('manufacturer.store')
         ]);
-        return view('manufacturer.create', compact('form'));
+        return view('manufac.create', compact('form'));
     }
 
     public function store(FormBuilder $formBuilder)
