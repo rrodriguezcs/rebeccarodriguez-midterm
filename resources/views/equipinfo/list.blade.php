@@ -1,6 +1,6 @@
 @extends('adminlte::page')
 
-@section('title', 'Equipment')
+@section('title', 'manufactures')
 
 @section('content_header')
     <h1>Equipment</h1>
@@ -12,21 +12,18 @@
     <table id="table" class="table table-bordered sortable">
       <thead>
         <tr>
-          <th style="width: 10px">#</th><th style="width: 40px">Manufacturer</th><th style="width: 40px">Category</th>
-          <th class="sorttable_nosort">Name</th>
-
-          <th style="width: 40px">Notes</th>
-          <th style="width: 40px" class="sorttable_nosort">Action</th>
+          <th style="width: 10px">#</th><th>Name</th><th>Price</th><th>Amount of RAM</th> <th>Manfucaturer</th> <th>Category</th><th style="width: 40px">Action</th>
         </tr>
       </thead>
       <tbody>
-        @foreach($equipinfo AS $equipment)
+        @foreach($equipment AS $equipment)
         <tr>
           <td>{{ $equipment->id }}</td>
-          <td>{{ $equipment->manuinfo->name }}</td>
-          <td>{{ ucwords($equipment->category) }}</td>
           <td>{{ $equipment->name }}</td>
-
+          <td>{{ $equipment->price }}</td>
+          <td>{{ $equipment->ram }}</td>
+          <td>{{ $equipment->manufac_id }}</td>
+          <td>{{ $equipment->category }}</td>
           <td><a class="btn btn-default btn-sm" href="{{ route('equipment.show',['equipment'=>$equipment->id]) }}">View</a></td>
         </tr>
         @endforeach
@@ -34,10 +31,8 @@
     </table>
   </div>
 </div>
-<a href="{{ route('equipinfo.create') }} " class="btn btn-primary" >Create</a>
-@stop
+<a href="{{ route('equipment.create') }} " class="btn btn-primary" >Create</a>
 
 
-@section('js')
-<script src="https://www.kryogenix.org/code/browser/sorttable/sorttable.js"></script>
+
 @stop
