@@ -1,9 +1,9 @@
 @extends('adminlte::page')
 
-@section('title', 'Equipment Info')
+@section('title', 'Equipment')
 
 @section('content_header')
-    <h1>Equipment Info</h1>
+    <h1>Equipment</h1>
 @stop
 
 @section('content')
@@ -11,7 +11,7 @@
   <div class="card-body">
     <div>
         <div class="h1">
-            {{ $equipmentinfo->name }}
+            {{ $equipinfo->name }}
         </div>
         <dl class="row">
             <dt class="col-sm-3">Price</dt>
@@ -35,7 +35,7 @@
         </dl>
     </div>
     <span style="float:right; margin-bottom: 10px;">
-        <a href="{{ route('note.create')}}?equipmentinfo={{$equipmentinfo->id}} " class="btn btn-primary">Create Note</a>
+        <a href="{{ route('note.create')}}?equipinfo={{$equipinfo->id}} " class="btn btn-primary">Create Note</a>
         <a href="{{ route('equipinfo.edit', ['equipinfo'=>$equipinfo->id]) }} " class="btn btn-warning">Update</a>
         <a href="{{ route('equipinfo.destroy',['equipinfo'=>$equipinfo->id]) }}" class="btn btn-danger" onclick="event.preventDefault(); document.getElementById('submit-form').submit();">
         Delete</a>
