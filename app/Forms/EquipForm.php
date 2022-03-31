@@ -23,6 +23,10 @@ class EquipForm extends Form
             'rules' => 'required',
             'label' => 'Full Name'
         ])
+        -> add('price', Field::TEXT, [
+            'rules' => 'required',
+            'label' => 'Price of item'
+            ])
             ->add('model_year', Field::TEXT, [
                 'rules' => 'required',
                 'label' => 'Model Year'
