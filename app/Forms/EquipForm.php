@@ -14,7 +14,7 @@ function getManufacturers() {
     return $retVal;
 }
 
-class EquipmentinfoForm extends Form
+class EquipForm extends Form
 {
     public function buildForm()
     {
