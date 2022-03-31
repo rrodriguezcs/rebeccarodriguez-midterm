@@ -11,8 +11,8 @@ class ManufacturerController extends Controller
 {
     public function index()
     {
-        $manufacture = Manufac::all();
-        return view('manufac.list',compact('manufacs'));
+        $manufac = Manufac::all();
+        return view('manufac.list',compact('manufac'));
     }
 
     public function create(FormBuilder $formBuilder)
