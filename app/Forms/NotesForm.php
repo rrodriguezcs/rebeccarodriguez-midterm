@@ -5,23 +5,27 @@ namespace App\Forms;
 use Kris\LaravelFormBuilder\Form;
 use Kris\LaravelFormBuilder\Field;
 
-class CustomerForm extends Form
+class NotesForm extends Form
 {
     public function buildForm()
     {
         $this -> 
-        add('name', Field::TEXT, [
+        add('notes', Field::TEXT, [
             'rules' => 'required',
-        'label' => 'Customer Name'
+        'label' => 'Notes'
         ])
-        -> add('phone', Field::TEXT, [
+        -> add('services', Field::TEXT, [
         'rules' => 'required',
-        'label' => 'Phone Number'
+        'label' => 'Services'
         ])
-        -> add('address', Field::TEXT, [
+        -> add('software', Field::TEXT, [
         'rules' => 'required',
-        'label' => 'Address'
+        'label' => 'Software'
          ])
+         -> add('equipment_id', Field::TEXT, [
+            'rules' => 'required',
+            'label' => 'Equipment ID'
+             ])
          ->add('submit', 'submit',[
             'label' => 'Submit'
         ]);
