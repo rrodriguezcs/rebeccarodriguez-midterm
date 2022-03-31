@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\Manufacturer;
+use App\Models\Manufac;
 use App\Forms\ManufacForm;
 use Kris\LaravelFormBuilder\FormBuilder;
 
@@ -39,6 +39,6 @@ class ManufacturerController extends Controller
     public function show($id)
     {
         $manufacture= Manufac::find($id); 
-        return view('manufacturer.detail',compact('manufacturer'));
+        return view('manufac.detail',compact('manufacturer'));
     }
 }
