@@ -192,9 +192,7 @@ return [
     */
 
     'aliases' => Facade::defaultAliases()->merge([
-
             'FormBuilder' => Kris\LaravelFormBuilder\Facades\FormBuilder::class,
-        // 'ExampleClass' => App\Example\ExampleClass::class,
     ])->toArray(),
 
 ];
