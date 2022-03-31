@@ -35,7 +35,7 @@ class EquipForm extends Form
                 'rules' => 'required',
                 'label' => 'Speed'
             ])
-            ->add('manu_id', Field::NUMBER, [
+            ->add('manufac_id', Field::NUMBER, [
                 'rules' => 'required',
                 'label' => 'Manufactuer ID'
             ])
