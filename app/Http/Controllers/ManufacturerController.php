@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\Manufac;
+use App\Models\Manufacturer;
 use App\Forms\ManufacForm;
 use Kris\LaravelFormBuilder\FormBuilder;
 
