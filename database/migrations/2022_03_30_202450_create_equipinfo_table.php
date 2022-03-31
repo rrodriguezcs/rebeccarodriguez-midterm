@@ -7,19 +7,18 @@ use Illuminate\Support\Facades\Schema;
 return new class extends Migration
 {
     /**
-     * Run the migrations.
-     *
-     * @return void
+     * switched from equipinfo -> equipment
      */
     public function up()
     {
-        Schema::create('equipinfo', function (Blueprint $table) {
+        Schema::create('equipment', function (Blueprint $table) {
             $table->id();
+            $table ->string('name');
+            $table ->string('price');
+            $table ->text('ram'); 
+            $table->foreignId('manufac_id') ->constrained('manufac')->onDelete('cascade');;;
+            $table ->text('category');
             $table->timestamps();
-            $table->string('name');
-            $table->string('year');
-            $table->string('speed');
-            $table->foreignId('manu_id')->constrained('manuinfo');
         });
     }
 
@@ -30,6 +29,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('equipinfo');
+        Schema::dropIfExists('equipment');
     }
 };

@@ -1,9 +1,9 @@
 @extends('adminlte::page')
 
-@section('title', 'Equipment')
+@section('title', 'Buyers')
 
 @section('content_header')
-    <h1>Equipment</h1>
+    <h1>Manufacturers</h1>
 @stop
 
 @section('content')
@@ -17,10 +17,10 @@
             <dt class="col-sm-3">Price</dt>
             <dd class="col-sm-9">{{ $equipment->price }}</dd>
 
-            <dt class="col-sm-3">Ram</dt>
+            <dt class="col-sm-3">RAM</dt>
             <dd class="col-sm-9">{{ $equipment->ram }}</dd>
 
-            <dt class="col-sm-3">Manufacture</dt>
+            <dt class="col-sm-3">Manufacturer</dt>
             <dd class="col-sm-9">{{ $equipment->manufac_id }}</dd>
 
             <dt class="col-sm-3">Category</dt>
