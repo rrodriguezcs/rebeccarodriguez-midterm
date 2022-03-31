@@ -33,7 +33,7 @@
 </div>
 <a href="{{ route('equipment.create') }} " class="btn btn-primary" >Create</a>
 
+@stop
 
 @section('js')
 <script src="https://www.kryogenix.org/code/browser/sorttable/sorttable.js"></script>
-@stop
