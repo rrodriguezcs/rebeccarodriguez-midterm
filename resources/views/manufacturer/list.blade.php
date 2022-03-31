@@ -20,8 +20,8 @@
         <tr>
           <td>{{ $manufacturer->id }}</td>
           <td>{{ $manufacturer->manufacturer }}</td>
-          <td>{{ $manufacturer->manfac_email }}</td>
-          <td>{{ $manufacturer->manfac_phone }}</td>
+          <td>{{ $manufacturer->manufac_email }}</td>
+          <td>{{ $manufacturer->manufac_phone }}</td>
           <td><a class="btn btn-default btn-sm" href="{{ route('manufacturer.show',['manufacturer'=>$manufacturer->id]) }}">View</a></td>
         </tr>
         @endforeach

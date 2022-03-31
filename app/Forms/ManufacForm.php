@@ -12,13 +12,13 @@ class ManufacForm extends Form
         $this -> 
         add('manufacturer', Field::TEXT, [
             'rules' => 'required',
-        'label' => 'Manufacturer'
+            'label' => 'Manufacturer'
         ])
         -> add('manufac_email', Field::TEXT, [
         'rules' => 'required',
         'label' => 'Manufacturer Email'
         ])
-        -> add('manfac_phone', Field::TEXT, [
+        -> add('manufac_phone', Field::TEXT, [
         'rules' => 'required',
         'label' => 'Manufacturer Phone'
          ])

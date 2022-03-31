@@ -15,10 +15,10 @@
         </div>
         <dl class="row">
             <dt class="col-sm-3">Email</dt>
-            <dd class="col-sm-9">{{ $manufacturer->manfac_email }}</dd>
+            <dd class="col-sm-9">{{ $manufacturer->manufac_email }}</dd>
 
             <dt class="col-sm-3">Phone</dt>
-            <dd class="col-sm-9">{{ $manufacturer->manfac_phone }}</dd>
+            <dd class="col-sm-9">{{ $manufacturer->manufac_phone }}</dd>
         </dl>
     </div>
 @stop

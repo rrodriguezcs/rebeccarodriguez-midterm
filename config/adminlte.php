@@ -244,6 +244,11 @@ return [
             'url'  => 'equipment',
             'icon' => 'far fa-hdd',
         ],
+        [
+            'text' => 'Manufacturers',
+            'url'  => 'manufacturer',
+            'icon' => 'far fa-building',
+        ],
         [         
             'text' => 'Notes',
             'url'  => 'notes',
