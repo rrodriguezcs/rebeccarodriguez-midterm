@@ -1,6 +1,6 @@
 @extends('adminlte::page')
 
-@section('title', 'manufactures')
+@section('title', 'Equipment')
 
 @section('content_header')
     <h1>Equipment</h1>
@@ -34,5 +34,6 @@
 <a href="{{ route('equipment.create') }} " class="btn btn-primary" >Create</a>
 
 
-
+@section('js')
+<script src="https://www.kryogenix.org/code/browser/sorttable/sorttable.js"></script>
 @stop
