@@ -18,7 +18,7 @@
             <dd class="col-sm-9">{{ $equipment->price }}</dd>
 
             <dt class="col-sm-3">RAM</dt>
-            <dd class="col-sm-9">{{ $equipment->ram }}</dd>
+            <dd class="col-sm-9">{{ $equipment->speed }}</dd>
 
             <dt class="col-sm-3">Manufacturer</dt>
             <dd class="col-sm-9">{{ $equipment->manufac_id }}</dd>

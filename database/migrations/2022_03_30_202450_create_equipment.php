@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table ->string('name');
             $table ->string('price');
-            $table ->text('ram'); 
+            $table ->text('speed'); 
             $table->foreignId('manufac_id') ->constrained('manufac')->onDelete('cascade');;;
             $table ->text('category');
             $table->timestamps();
